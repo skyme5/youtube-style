@@ -5,34 +5,39 @@
 @license      MIT
 @description  Move video controls below video screen
 @author       skyme5 (https://github.com/skyme5/youtube-style)
+@homepageURL  https://github.com/skyme5/youtube-style
+@supportURL   https://github.com/skyme5/youtube-style
+@updateURL    https://raw.githubusercontent.com/skyme5/youtube-style/main/youtube-controls.user.css
 @preprocessor default
 ==/UserStyle== */
 
-ytd-video-masthead-ad-v3-renderer,
-ytd-player-legacy-desktop-watch-ads-renderer {
-    display: none !important;
-}
+@-moz-document domain(youtube.com) {
+    ytd-video-masthead-ad-v3-renderer,
+    ytd-player-legacy-desktop-watch-ads-renderer {
+        display: none !important;
+    }
 
-ytd-watch-flexy #columns #info:nth-child(5),
-ytd-watch-flexy[theater] #columns #secondary {
-    margin-top: 50px;
-}
+    ytd-watch-flexy #columns #info:nth-child(5),
+    ytd-watch-flexy[theater] #columns #secondary {
+        margin-top: 50px;
+    }
 
-.html5-video-player {
-    overflow: visible !important;
-}
+    .html5-video-player {
+        overflow: visible !important;
+    }
 
-.ytp-chrome-bottom {
-    top: 100%;
-    opacity: 1 !important;
-}
+    .ytp-chrome-bottom {
+        top: 100%;
+        opacity: 1 !important;
+    }
 
-ytd-watch-flexy[fullscreen] #columns #info:nth-child(5),
-ytd-watch-flexy[fullscreen] #columns #secondary {
-    margin-top: unset;
-}
+    ytd-watch-flexy[fullscreen] #columns #info:nth-child(5),
+    ytd-watch-flexy[fullscreen] #columns #secondary {
+        margin-top: unset;
+    }
 
-ytd-watch-flexy[fullscreen] .ytp-chrome-bottom {
-    top: unset;
-    opacity: unset;
+    ytd-watch-flexy[fullscreen] .ytp-chrome-bottom {
+        top: unset;
+        opacity: unset;
+    }
 }
