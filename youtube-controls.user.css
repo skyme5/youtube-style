@@ -28,6 +28,7 @@
 
     .ytp-chrome-bottom {
         top: 100%;
+        opacity: 1 !important;
     }
     
     .ytp-chrome-controls {
